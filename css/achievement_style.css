@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Montserrat, Arial;
+	min-height: 100vh;
+	background: #940A0A; 
+	display: flex;
+	flex-direction: column;
+}
+
+.top-header .logo {
+    width: 60px;
+    height: 60px;
+    margin-left: -15rem;
+    gap: 4rem;
+}
+
+.top-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 12%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 0;
+}
+
+.top-header {
+	background: #ffffff;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.top-header .title {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	margin-left: 25rem;
+	align-items: center;
+	text-align: left;
+	gap: 1.5rem;
+	padding: .5rem;
+}
+
+.top-header .title-text h1 {
+	font-style: Open Sans Bold;
+	margin-left: 30rem;
+	gap: 0rem;
+	margin: 0;
+	margin-bottom: 0;
+	margin-top: 1.5rem;
+	line-height: 0rem;
+	padding: 0rem;
+	font-size: 2rem;
+	color: #940A0A;
+	text-align: left;
+	align-items: center;
+}
+
+.top-header .tagline {
+	padding: 0;
+	margin-left: .15rem;
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	color: #7A726C;
+	text-align: left;
+}
+
+.nav {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	gap: 3rem;
+	margin-top: 0.6rem;
+	margin-left: 4rem;
+}
+
+.nav a {
+	font-family: Arial;
+	color: #948E8E;
+	text-decoration: none;
+	font-size: 1rem;
+	gap: 3rem;
+	font-weight: bold;
+}
+
+.nav a:hover {
+    color: #A52A2A;
+}
+

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Montserrat, Arial;
+    min-height: 100vh;
+    background: #940A0A; 
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header .logo {
+    width: 60px;
+    height: 60px;
+    margin-left: -15rem;
+    gap: 4rem;
+}
+.top-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 12%;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust transparency */
+    z-index: 0;
+}
+.top-header {
+    background: #ffffff;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+.top-header .title {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin-left: 25rem;
+    align-items: center;
+    text-align: left;
+    gap: 1.5rem;
+    padding: .5rem;
+}
+.top-header .title-text h1 {
+    font-style: Open Sans Bold;
+    margin-left: 30rem;
+    gap:0rem;
+    margin: 0;
+    margin-bottom: o;
+    margin-top: 1.5rem;
+    line-height:0rem;
+    padding: 0rem;
+    font-size:2rem;
+    color: #940A0A;
+    text-align: left;
+    align-items: center;
+}
+
+
+.top-header .tagline {
+    padding: 0;
+    margin-left: .15rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #7A726C;
+    text-align: left;
+}
+
+.banner {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(148, 10, 10, 0.5);
+    z-index: 2;
+}
+
+.banner-content {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    z-index: 3;
+}
+
+.banner-text {
+    color: white;
+    text-align: left;
+    align-self: flex-start;
+    margin-top: -30px;
+    flex-direction: column;
+}
+
+.banner-text h2 {
+    font-family: 'Poppins', serif !important;
+    font-size: 6.5rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+    margin-top: -260px;
+    margin-bottom: -1.5rem;
+    text-align: left;
+    padding: 0;
+    letter-spacing: 2.5rem;
+    margin-left: -50rem;
+    color: #940A0A; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 3rem;
+    margin-top: 0.6rem;
+    margin-left: 4rem;
+}
+
+.nav a{
+    font-family: Arial;
+    color: #948E8E;
+    text-decoration: none;
+    font-size: 1rem;
+    gap:3rem;
+    font-weight: bold;
+ }
+
+.nav a:hover {
+    color: #A52A2A;
+   
+}
+
+.news-detail {
+    padding: 3rem 2rem;
+    border-top: 2px solid #940A0A;
+    scroll-margin-top: 80px;  /* Space from top when scrolling */
+}
+
+.news-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.news-detail h2 {
+    font-family: 'DM Serif Display';
+    font-size: 2.5rem;
+    color: #940A0A;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.news-detail img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-detail p {
+    font-family: 'Arial';
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+
+
+

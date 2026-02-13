@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, Arial;
+    min-height: 100vh;
+    background: #940A0A; 
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header .logo {
+    width: 60px;
+    height: 60px;
+    margin-left: -15rem;
+    gap: 4rem;
+}
+
+.top-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 12%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 0;
+}
+
+.top-header {
+    background: #ffffff;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.top-header .title {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin-left: 25rem;
+    align-items: center;
+    text-align: left;
+    gap: 1.5rem;
+    padding: .5rem;
+}
+
+.top-header .title-text h1 {
+    font-style: Open Sans Bold;
+    margin-left: 30rem;
+    gap: 0rem;
+    margin: 0;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+    line-height: 0rem;
+    padding: 0rem;
+    font-size: 2rem;
+    color: #940A0A;
+    text-align: left;
+    align-items: center;
+}
+
+.top-header .tagline {
+    padding: 0;
+    margin-left: .15rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #7A726C;
+    text-align: left;
+}
+
+.nav {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 3rem;
+    margin-top: 0.6rem;
+    margin-left: 4rem;
+}
+
+.nav a {
+    font-family: Arial;
+    color: #948E8E;
+    text-decoration: none;
+    font-size: 1rem;
+    gap: 3rem;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #A52A2A;
+}
+
+/* First Banner */
+.banner {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(148, 10, 10, 0.5);
+    z-index: 2;
+}
+
+.banner-text {
+    color: white;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.banner-text h2 {
+    font-family: 'Poppins', serif !important;
+    font-size: 6.5rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+    text-align: left;
+    padding: 0;
+    letter-spacing: 2rem;
+    color: #ffffff; 
+    text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9);
+}
+
+.banner-one {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.banner-one .banner-text {
+    position: static;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.banner-one .banner-text h2 {
+    font-family: 'Poppins', serif !important;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 5rem;
+    line-height: 1;
+    text-align: center;
+    padding: 0;
+    letter-spacing: 0.4rem;
+    color: #940A0A;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Heading - First Section */
+.section-heading {
+    max-width: 1000px;
+    margin: 0 auto 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-heading h3 {
+    font-size: 1.8rem;
+    color: black;
+    margin: 0;
+    font-weight: bold;
+    margin-left: 20rem;
+}
+
+.section-heading p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    margin-left: 20rem;
+    margin-right: -7.5rem;
+    margin-top: -.5rem;
+    text-align: justify;
+}
+
+.banner-one .banner-image-one {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: -14.5rem;
+    margin-left: -8rem;
+}
+
+/* Section Heading One - Other Sections */
+.section-heading-one {
+    max-width: 1000px;
+    margin: 0 auto 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-heading-one h4 {
+    font-size: 1.8rem;
+    color: black;
+    margin: 0;
+    margin-left: -7.5rem;
+    margin-bottom: -8rem;
+    font-weight: bold;
+}
+
+.section-heading-one p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    margin-left:-7.5rem;
+    margin-right: 21rem;
+    margin-top: 7rem;
+    text-align: justify;
+}
+
+.section-heading-two {
+    max-width: 1000px;
+    margin: 0 auto 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-heading-two h5 {
+    font-size: 1.8rem;
+    color: black;
+    margin: 0;
+    margin-left: 20rem;
+    margin-bottom: -10rem;
+    font-weight: bold;
+}
+
+.section-heading-two p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    margin-left: 20rem;
+    margin-right: -7.5rem;
+    margin-top: 9rem;
+    text-align: justify;
+}
+
+.section-heading-three {
+    max-width: 1000px;
+    margin: 0 auto 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.section-heading-three h6 {
+    font-size: 1.8rem;
+    color: black;
+    margin: 0;
+    margin-left:-8rem;
+    margin-bottom: -14rem;
+    font-weight: bold;
+}
+
+.section-heading-three h7 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    margin-left: -8rem;
+    margin-right: 22rem;
+    margin-top: 13rem;
+    text-align: justify;
+}
+
+.section-heading-four {
+    width: 1000000;
+    margin: 0 auto 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: #940A0A;
+}
+
+.section-heading-four h6 {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    margin-left: 9rem;
+    margin-top: 1rem;
+    text-align: justify;
+    font-style: bold;
+}
+.section-heading-four h7 {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    margin-left: 6.3rem;
+    margin-top: -1.6rem;
+    text-align: justify;
+    font-weight: bold;
+}
+.section-heading-four h8 {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    margin-left: 10.5rem;
+    margin-top: -1.6rem;
+    text-align: justify;
+    font-weight: bold;
+}
+.banner-one .banner-image-two {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    margin-top: -15rem;
+    margin-right: -7.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-one .banner-image-three {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 2rem 0;
+    margin-top: -15.5rem;
+    margin-left: -8rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-one .banner-image-four {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    margin-top: -12.5rem;
+    margin-right: -8rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.banner-footer::before {
+    display: none !important;
+}
+
+.banner-footer::after {
+    display: none !important;
+}
+
+.banner-footer {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    min-height: 90px;
+    height: auto;
+    overflow: visible;
+    position: relative;
+    z-index: 5;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    background-attachment: unset !important;
+    background-size: unset !important;
+    background-position: unset !important;
+    padding: 1rem 0.5rem;
+    margin-top: 0;
+}
+
+.banner-footer .banner-text {
+    position: relative;
+    z-index: 3;
+}
+
+.footer {
+    background-color: transparent;
+    color: #ffffff !important;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin-top: 2.5rem;
+    margin-left: 0;
+    left: -35rem;
+    top: -0.5rem;
+    position: relative;
+}
+
+.footer-content h3 {
+    font-family: 'Arial';
+    font-size: 1.3rem;
+    margin-top: -8rem;
+    margin-bottom: 0;
+    color: black;
+    letter-spacing: 0.2rem;
+    position: relative;
+    z-index: 2;
+    left: -4.5rem;
+}
+.footer-content h4 {
+    font-family: 'Arial';
+    font-size: 1.3rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+    color: black;
+    letter-spacing: 0.2rem;
+    position: relative;
+    z-index: 2;
+    left: -4rem;
+}
+.footer-content h5{
+    font-family: 'Arial';
+    font-size: 1.3rem;
+    margin-top: .4rem;
+    margin-bottom: 0;
+    color: black;
+    letter-spacing: 0.2rem;
+    position: relative;
+    z-index: 2;
+    left: -15rem;
+}
